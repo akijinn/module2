@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Layout</title>
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+}
+
+div#Box {
+  background-color: pink;
+}
+p {
+  border: 1px solid black;
+  background-color: #000000;
+  width: 95%;
+  height: 50px;
+ margin-bottom: 15px;
+  font-family: Helvetica;
+  color: white;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#content1 {
+  background-color: #3399FF;
+  position: relative;
+  top: 65px;
+  left: 65px;
+
+}
+#content2 {
+  background-color: #3399FF;
+
+}
+#content3 {
+  background-color: #3399FF;
+  position: absolute;
+  top: 0;
+  left: 3;
+}
+
+/********** Desktop Only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3 {
+    float: left;
+    border: 1px solid black;
+    background-color: pink;
+  }
+  .col-lg-1 {
+    width: 33.33%;
+  }
+  .col-lg-2 {
+    width: 33.33%;
+  }
+  .col-lg-3 {
+    width: 33.33%;
+  }
+  
+}
+/********** Tablets Only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    border: 1px solid black;
+    background-color: pink;
+  }
+  .col-md-1 {
+    width: 50%;
+  }
+  .col-md-2 {
+    width: 50%;
+  }
+  .col-md-3 {
+    width: 100%;
+  }
+
+}
+/********** Mobile Only **********/
+@media (min-width: 767px) {
+  .col-md-1, .col-md-2, .col-md-3 {
+    float: left;
+    border: 1px solid black;
+    background-color: pink;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  
+}
+</style>
+</head>
+<body>
+<h1>Module 2 Demo</h1>
+
+<div class="row">
+  <div class="col-lg-3 col-md-6"><p>Chicken</p></div>
+  <div class="col-lg-3 col-md-6"><p>Beef</p></div>
+  <div class="col-lg-3 col-md-6"><p>Sushi</p></div>
+
+<div id="Box">
+<div id="content1">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+<div id="content2">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+<div id="content3">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </div>
+</div>
+
+</body>
+</html>
